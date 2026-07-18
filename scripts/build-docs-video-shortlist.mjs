@@ -174,6 +174,9 @@ const reserve = [
   },
 ];
 
+const approved = recommended.slice(0, 11);
+const needsReview = recommended.slice(11);
+
 function getVideo(postId) {
   const video = videos.get(postId);
   if (!video) throw new Error(`Video post ${postId} is missing from the audit data.`);
@@ -210,7 +213,7 @@ const lines = [
   '',
   '## Recommendation',
   '',
-  `Use ${recommended.length} recordings now, keep ${reserve.length} as reserves, and leave the remaining ${videos.size - selectedIds.size} out of the docs.`,
+  `Videos 1–${approved.length} are approved for docs. Videos ${approved.length + 1}–${recommended.length} still need review. Keep ${reserve.length} as reserves, and leave the remaining ${videos.size - selectedIds.size} out of the docs.`,
   '',
   '- Put task-matched recordings in tutorials and how-to guides.',
   '- Put capability proofs and product animations in explanation or overview pages.',
@@ -221,9 +224,12 @@ const lines = [
   '',
   'The current Fumadocs content tree has no Cua-Bench MDX page. Add an overview page before embedding Cua-Bench launch or results clips.',
   '',
-  '## Use now',
+  '## Approved for docs',
   '',
-  ...recommended.flatMap(renderVideo),
+  ...approved.flatMap(renderVideo),
+  '## Needs review',
+  '',
+  ...needsReview.flatMap((entry, index) => renderVideo(entry, approved.length + index)),
   '## Reserve',
   '',
   '| Preview | Post | Why it is a reserve |',

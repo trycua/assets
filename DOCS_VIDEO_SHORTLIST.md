@@ -4,7 +4,7 @@ Generated from the [full X video audit](VIDEO_AUDIT.md), which contains 94 publi
 
 ## Recommendation
 
-Use 14 recordings now, keep 7 as reserves, and leave the remaining 73 out of the docs.
+Videos 1–11 are approved for docs. Videos 12–14 still need review. Keep 7 as reserves, and leave the remaining 73 out of the docs.
 
 - Put task-matched recordings in tutorials and how-to guides.
 - Put capability proofs and product animations in explanation or overview pages.
@@ -15,7 +15,7 @@ The clearest immediate change is to replace the Windows piano video in **Drive y
 
 The current Fumadocs content tree has no Cua-Bench MDX page. Add an overview page before embedding Cua-Bench launch or results clips.
 
-## Use now
+## Approved for docs
 
 ### 1. Calculator build and QA loop on Linux
 
@@ -137,6 +137,8 @@ The current Fumadocs content tree has no Cua-Bench MDX page. Add an overview pag
 - Decision: Use as the main Cua-Bench explainer. It covers tasks, variations, adapters, the CLI, and self-hosting.
 - Recording: 0:50, 1920×1080
 - Source: [@trycua post 2014406820887183512](https://x.com/trycua/status/2014406820887183512)
+
+## Needs review
 
 ### 12. Cua-Bench KiCad launch animation
 
