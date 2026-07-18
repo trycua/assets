@@ -2,6 +2,14 @@
 
 Static media used by the [Cua documentation](https://cua.ai/docs).
 
+The [X video audit](VIDEO_AUDIT.md) inventories the public video posts from
+`@trycua` and `@francedot`, with post context, highest-resolution X CDN links,
+and a true midpoint frame for every video. Regenerate it with:
+
+```sh
+node scripts/audit-x-videos.mjs
+```
+
 GitHub Pages publishes the contents of `public/` at:
 
 ```text
