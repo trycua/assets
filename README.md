@@ -24,7 +24,9 @@ https://trycua.github.io/assets/
 | Asset | Original post |
 | --- | --- |
 | `macos-background-chrome.mp4` | [@trycua](https://x.com/trycua/status/2047383209244287350) |
+| `macos-background-dev-loop.mp4` | [@trycua](https://x.com/trycua/status/2047383205444251889) |
 | `macos-trajectory-capture.mp4` | [@trycua](https://x.com/trycua/status/2047383207612645426) |
+| `windows-hermes-four-agent-windows.mp4` | [@francedot](https://x.com/francedot/status/2061706670208897279) |
 | `windows-msbuild-piano.mp4` | [@francedot](https://x.com/francedot/status/2062231318294131130) |
 | `windows-wpf-agent-qa.mp4` | [@trycua](https://x.com/trycua/status/2059688966085853245) |
 | `windows-legacy-postal-app.mp4` | [@trycua](https://x.com/trycua/status/2059693301276565841) |
@@ -40,3 +42,12 @@ https://trycua.github.io/assets/videos/cua-driver/<filename>.mp4
 ```
 
 Matching poster images live under `posters/cua-driver/`.
+
+## Cua-Bench videos
+
+| Asset | Original post |
+| --- | --- |
+| `open-source-overview.mp4` | [@trycua](https://x.com/trycua/status/2014406820887183512) |
+
+Cua-Bench video URLs use `videos/cua-bench/`, with matching poster images under
+`posters/cua-bench/`.
