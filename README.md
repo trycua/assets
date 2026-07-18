@@ -2,12 +2,15 @@
 
 Static media used by the [Cua documentation](https://cua.ai/docs).
 
-The [X video audit](VIDEO_AUDIT.md) inventories the public video posts from
+The [docs video shortlist](DOCS_VIDEO_SHORTLIST.md) selects the recordings that
+best support Cua, Cua Driver, and Cua-Bench documentation. The
+[full X video audit](VIDEO_AUDIT.md) inventories the public video posts from
 `@trycua` and `@francedot`, with post context, highest-resolution X CDN links,
-and a true midpoint frame for every video. Regenerate it with:
+and a true midpoint frame for every video. Regenerate both with:
 
 ```sh
 node scripts/audit-x-videos.mjs
+node scripts/build-docs-video-shortlist.mjs
 ```
 
 GitHub Pages publishes the contents of `public/` at:
